@@ -14,7 +14,7 @@ if(G5_COMMUNITY_USE === false) {
 
 include_once(G5_THEME_PATH.'/head.php');
 ?>
-<h2>test</h2>
+<h2>test1</h2>
 
 <?php
 echo G5_THEME_PATH;
