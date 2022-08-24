@@ -14,6 +14,20 @@ if(G5_COMMUNITY_USE === false) {
 
 include_once(G5_THEME_PATH.'/head.php');
 ?>
+
+<style>
+    .visual{
+        height: 100%;
+        height: 200px;
+        background: #ddd;
+
+    }
+</style>
+<div class="visual">
+    test
+</div>
+
+
 <h2>test1</h2>
 
 <?php
@@ -22,6 +36,9 @@ echo "<br>";
 echo G5_THEME_IMG_URL."<br>";
 echo G5_THEME_CSS_URL."<br>";
 echo G5_THEME_JS_URL."<br>";
+echo G5_JS_URL."<br>";
+echo G5_BBS_URL."<br>";
+
 ?>
 
 
