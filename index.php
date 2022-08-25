@@ -40,6 +40,29 @@ echo G5_JS_URL."<br>";
 echo G5_BBS_URL."<br>";
 
 ?>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <?php
+                // 이 함수가 바로 최신글을 추출하는 역할을 합니다.
+                // 사용방법 : latest(스킨, 게시판아이디, 출력라인, 글자수);
+                // 테마의 스킨을 사용하려면 theme/basic 과 같이 지정
+                echo latest('theme/basic', 'notice', 3, 24);
+            ?>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <?php
+                // 이 함수가 바로 최신글을 추출하는 역할을 합니다.
+                // 사용방법 : latest(스킨, 게시판아이디, 출력라인, 글자수);
+                // 테마의 스킨을 사용하려면 theme/basic 과 같이 지정
+                echo latest('theme/basic', 'qa', 3, 24);
+            ?>
+        </div>
+    </div>
+</div>
+
 
 
 

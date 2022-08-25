@@ -445,5 +445,5 @@ box-sizing:content-box;
 .visualWrap{
 background: skyblue;
 height:200px;
-dispaly: flex;justify-content:center;align-items:center;
+display: flex;justify-content:center;align-items:center;
 }
