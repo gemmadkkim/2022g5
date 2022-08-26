@@ -16,7 +16,7 @@ $list_count = (is_array($list) && $list) ? count($list) : 0;
         <?php for ($i=0; $i<$list_count; $i++) {  ?>
             <li>
                 <a href="<? echo get_pretty_url($bo_table, $list[$i]['wr_id'])?>">
-                    <h4><? echo $list[$i]['subject'];?></h4>
+                    <h4>[<? echo $list[$i]['ca_name'];?>] <? echo $list[$i]['subject'];?></h4>
 
                     <? if ($list[$i]['icon_new']) echo "<span class=\"new_icon\">N<span class=\"sound_only\">새글</span></span>";?>
                     <p><? echo $list[$i]['datetime2']?></p>

@@ -82,8 +82,46 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 
 <hr>
 
+
+
 <!-- 콘텐츠 시작 { -->
 <div id="wrapper">
+<?php if (!defined("_INDEX_")) { ?> 
+
+    <style>
+    .visual{
+        height: 200px;
+        display: flex;justify-content: center;align-items: center;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        color:white
+    }
+    .visual h2{font-size: 2em;}
+    .subTopBg_01{background-image: url(<? echo G5_THEME_IMG_URL?>/pc01.jpg);}
+    .subTopBg_02{ background-image: url(<? echo G5_THEME_IMG_URL?>/pc02.jpg);}
+    .subTopBg_03{ background-image: url(<? echo G5_THEME_IMG_URL?>/pc03.jpg);}
+    .subTopBg_04{ background-image: url(<? echo G5_THEME_IMG_URL?>/pc02.jpg);}
+    </style>
+
+    <div class="visual" id="page_title">
+        <div class="txtWrap">
+            <h2 class="loc1D"></h2>
+            <p class="txt">항상 저희 홈페이지를 찾아주셔서 감사합니다.</p>
+        </div>
+    </div>
+    <script>
+        window.onload = function(){
+
+            console.log($("111"+"loc1D").html());
+            if($("loc1D").html() == "Our Story"){
+                $(".txtWrap>.txt").html("안녕하세요")
+            }
+        }
+    </script>
+
+<? } ?>
     <div id="container_wr"  <?php if (defined("_INDEX_")) { ?> style="width:100%" <?php } ?>>
    
     <div id="container">
